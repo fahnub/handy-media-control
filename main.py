@@ -67,9 +67,9 @@ while True:
                 prev = count
                 start_init = False
 
-        # drawing.draw_landmarks(frame, hand_keypoints, hands.HAND_CONNECTIONS)
+        drawing.draw_landmarks(frame, hand_keypoints, hands.HAND_CONNECTIONS)
 
-    frame = cv2.resize(frame, (320, 240)) 
+    frame = cv2.resize(frame, (640, 480)) 
     cv2.imshow("window", frame)
 
     if cv2.waitKey(1) == 27:
